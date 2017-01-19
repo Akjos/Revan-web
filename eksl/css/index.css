@@ -104,17 +104,16 @@ body {
 .pageMain .menuTiles .tiles {
 	width: 300px;
 	height: 150px;
-	margin: 3px;
+	margin: 3px 3px 3px 0;
 	display: inline-block;
 	position: relative;
 	border: 3px solid #606060;
 	border-radius: 5px;
+	/* I like this opacity -> the page is darker and I feel fear and no hope */
 	opacity: 0.2;
+	/* This opacity is too colourful */
 	/*opacity: 0.3;*/
 	transition: all .2s ease-in-out;
-}
-.pageMain .menuTiles .tiles:first-child {
-	margin-left: 0;
 }
 .pageMain .menuTiles .tiles:last-child {
 	margin-right: 0;
