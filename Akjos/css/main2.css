@@ -1,0 +1,121 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**************************************************************/
+html {
+	font-size: 62.5%;
+	background: url(../image/background.jpg); 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.headPage {
+	max-width: 1020px;
+	/* Unnecessary 'height: auto'. If there is 'min-height: 100px' it is already 'auto' if greater than '100px' */
+	/*height: auto;*/
+	min-height: 100px;
+	margin: 15px auto 20px auto;
+	/* I'm not sure if it's important but I think you should set 'border-width'. Perhaps 'width' will be different in different conditions. I believe that it would be safer, if 'border-width' will be fixed */
+	border: 3px solid #330000;
+	/*border-style: solid;
+	border-color: #330000;*/
+	font-size: 2rem;
+	/* You may do what you like, but I prefer to write color with great letters e.g. '#CC0000', beacuse usually it's the way I see in books, tutorials etc. */
+	color: #CC0000;
+}
+.imgCyt {
+	max-height: 100px;
+	float: left;
+	margin-right: 5px;
+	border-radius: 0 25px 25px 0;
+}
+.cytation {
+	/* I added margin, because I think it's better if text is not touching the border */
+	margin-top: 5px;
+	margin-right: 5px;
+	text-align: justify;
+	min-height: 75px;
+}
+/* I tried to do space between .author and border-bottom, but there was a problem with height of .headPage */
+.pageMain {
+	/* I'm not sure why you used that. I don't see any difference with and without it. Let me know if there is any */
+	/*clear: both;*/
+	max-width: 1020px;
+	margin-left: auto;
+	margin-right: auto;
+	/* The same problem with borders as with .headPage */
+	border: 3px solid #ADAD85;
+	text-align: center;
+}
+.imageMenu {
+	height: 400px;
+    width: 320px;
+}
+.contentMenu {
+	width: 65%;
+	min-width: 235px;
+	margin-top: 40px;
+    background-color: #575757;
+	padding: 40px 0px 20px 0px;
+	display: inline-block;
+	vertical-align: top;
+}
+.menu {
+	max-width: 500px;
+	text-align: center;
+	background-color: #1A0000;
+	/* I don't know why you used that */
+	/*vertical-align: top;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+.tile {
+	display: inline-block;
+}
+.imgTile {
+	height: 125px;
+	width: 225px;
+	margin: 5px;
+}
